@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    
+
+    <title>
+      数据结构是什么鬼 | Moliy小姐 
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+      <meta name="author" content="moliy">
+    
+    
+
+    <meta name="description" content="天知道数据结构是个什么鬼！刚开始接触的时候满脑子都是为什么要知道这些，会用就OK了呀～但是真正开始了解到的时候发现其实还是有必要的，你不知道这是个什么东西，又怎么能真正的去实际运用。不过概念这种东西，在我的价值定论里说不占多数分值的，了解就好，精力分散在此，有些顾此失彼 因小失大了。
+不过既然去学习了还是要总结一下的：比如数据项组成了数据元素，数据元素组成了数据。再比如数据结构分为逻辑结构、存储结">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数据结构是什么鬼 | Moliy小姐">
+<meta property="og:url" content="http://www.moliy.pw/2016/07/06/struct01/index.html">
+<meta property="og:site_name" content="Moliy小姐">
+<meta property="og:description" content="天知道数据结构是个什么鬼！刚开始接触的时候满脑子都是为什么要知道这些，会用就OK了呀～但是真正开始了解到的时候发现其实还是有必要的，你不知道这是个什么东西，又怎么能真正的去实际运用。不过概念这种东西，在我的价值定论里说不占多数分值的，了解就好，精力分散在此，有些顾此失彼 因小失大了。
+不过既然去学习了还是要总结一下的：比如数据项组成了数据元素，数据元素组成了数据。再比如数据结构分为逻辑结构、存储结">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/575267c9gw1f5kjaty5azj20fl09hjsn.jpg">
+<meta property="og:updated_time" content="2016-07-06T15:26:40.091Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="数据结构是什么鬼 | Moliy小姐">
+<meta name="twitter:description" content="天知道数据结构是个什么鬼！刚开始接触的时候满脑子都是为什么要知道这些，会用就OK了呀～但是真正开始了解到的时候发现其实还是有必要的，你不知道这是个什么东西，又怎么能真正的去实际运用。不过概念这种东西，在我的价值定论里说不占多数分值的，了解就好，精力分散在此，有些顾此失彼 因小失大了。
+不过既然去学习了还是要总结一下的：比如数据项组成了数据元素，数据元素组成了数据。再比如数据结构分为逻辑结构、存储结">
+<meta name="twitter:image" content="http://ww1.sinaimg.cn/large/575267c9gw1f5kjaty5azj20fl09hjsn.jpg">
+    
+    
+    
+      <link rel="icon" type="image/x-icon" href="/favicon.png">
+    
+    <link rel="stylesheet" href="/css/uno.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/archive.css">
+    <link rel="stylesheet" href="/css/china-social-icon.css">
+
+</head>
+<body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+
+<header class="panel-cover panel-cover--collapsed">
+
+
+  <div class="panel-main">
+
+  
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        
+
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">Moliy小姐</a></h1>
+        <hr class="panel-cover__divider" />
+
+        
+        <p class="panel-cover__description">
+          Moliy小姐的程序员日常
+        </p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+        
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+
+              
+                
+                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">首页</a></li>
+              
+                
+                <li class="navigation__item"><a href="/about" title="" class="">关于</a></li>
+              
+                
+                <li class="navigation__item"><a href="/archive" title="" class="">归档</a></li>
+              
+
+            </ul>
+          </nav>
+
+          <!-- ----------------------------
+To add a new social icon simply duplicate one of the list items from below
+and change the class in the <i> tag to match the desired social network
+and then add your link to the <a>. Here is a full list of social network
+classes that you can use:
+
+    icon-social-500px
+    icon-social-behance
+    icon-social-delicious
+    icon-social-designer-news
+    icon-social-deviant-art
+    icon-social-digg
+    icon-social-dribbble
+    icon-social-facebook
+    icon-social-flickr
+    icon-social-forrst
+    icon-social-foursquare
+    icon-social-github
+    icon-social-google-plus
+    icon-social-hi5
+    icon-social-instagram
+    icon-social-lastfm
+    icon-social-linkedin
+    icon-social-medium
+    icon-social-myspace
+    icon-social-path
+    icon-social-pinterest
+    icon-social-rdio
+    icon-social-reddit
+    icon-social-skype
+    icon-social-spotify
+    icon-social-stack-overflow
+    icon-social-steam
+    icon-social-stumbleupon
+    icon-social-treehouse
+    icon-social-tumblr
+    icon-social-twitter
+    icon-social-vimeo
+    icon-social-xbox
+    icon-social-yelp
+    icon-social-youtube
+    icon-social-zerply
+    icon-mail
+
+-------------------------------->
+
+<!-- add social info here -->
+
+
+
+<nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+    
+      <!-- Github -->
+      <li class="navigation__item">
+        <a href="https://github.com/MoliyXuan" title="Huno on GitHub">
+          <i class='icon icon-social-github'></i>
+          <span class="label">GitHub</span>
+        </a>
+      </li>
+    
+
+    <!-- China social icon -->
+    <!--
+    
+      <li class="navigation__item">
+        <a href="" title="">
+          <i class='icon cs-icon-douban'></i>
+          <span class="label">Douban</span>
+        </a>
+      </li>
+
+      <li class="navigation__item">
+        <a href="" title="">
+          <i class='icon cs-icon-weibo'></i>
+          <span class="label">Weibo</span>
+        </a>
+      </li>
+
+    -->
+
+
+
+  </ul>
+</nav>
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner entry">
+            
+
+<article class="post-container post-container--single">
+
+  <header class="post-header">
+    
+    <h1 class="post-title">数据结构是什么鬼</h1>
+
+    
+
+    <div class="post-meta">
+      <time datetime="2016-07-06" class="post-meta__date date">2016-07-06</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+            <font class="categories">
+            &#8226; 分类:
+            <a class="categories-link" href="/categories/数据结构/">数据结构</a>
+            </font>
+          
+
+          
+             &#8226; 标签:
+            <font class="tags">
+              <a class="tags-link" href="/tags/数据结构-C语言/">数据结构 C语言</a>
+            </font>
+          
+
+      </span>
+    </div>
+    
+    
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <p>天知道数据结构是个什么鬼！刚开始接触的时候满脑子都是为什么要知道这些，会用就OK了呀～但是真正开始了解到的时候发现其实还是有必要的，你不知道这是个什么东西，又怎么能真正的去实际运用。不过概念这种东西，在我的价值定论里说不占多数分值的，了解就好，精力分散在此，有些顾此失彼 因小失大了。</p>
+<p>不过既然去学习了还是要总结一下的：比如数据项组成了数据元素，数据元素组成了数据。再比如数据结构分为逻辑结构、存储结构、对数据的运算。</p>
+<p><img src="http://ww1.sinaimg.cn/large/575267c9gw1f5kjaty5azj20fl09hjsn.jpg" alt=""></p>
+<p>当然，这个时候就要进入算法的介绍了~~</p>
+<p>不管是人是物还是其他的分类，都是有自己特点的，算法的特点有5点，当然我们要讲究的称为算法的特性！</p>
+<p>算法的特性：1.有穷性；2.确定性；3.至少有零个输入；4.至少有1个输出；5；可行性。</p>
+<p>我觉得我肯定不是第一个或者唯一一个对零个输入有疑问的学生，不过这并不妨碍我之后的学习，像我这种缺乏探究精神的人来说，既然说法如此，我就坦然接受吧，哈哈~</p>
+<p>还没写完就12点了，看来是天意让我不要啰嗦，那我再补个小点就睡吧。</p>
+<p>算法的设计目标：1.正确性；2.可读性；3.健壮性；4.高效率与低存储量。</p>
+<p>好了，先记住这几点吧，因为我睡眠要求时长比较高，所以比较懒，多数时间更愿意拿来赖在床上，兽兽鉴于我准备踏入程序猿的日常，所以怂恿我开了博，其实开始我是拒绝的，毕竟我不是个擅长文字的人，不过后来还是屈从了兽兽的淫威，想想如果真的坚持了下来，以后回首，应该也是一件自己把自己感动到的事情吧。</p>
+<p>致未来的自己：开始了就别轻易放弃，梦想还是要有的，万一没了就再想一个！</p>
+
+  </section>
+
+  
+  
+
+<section class="post-comments">
+
+    <div class="ds-thread" data-thread-key="2016/07/06/struct01/"></div>
+
+    <script type="text/javascript">
+      var duoshuoQuery = {short_name:"moliy"};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+        || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+    </script> 
+
+</section>
+
+
+</article>
+
+
+            <footer class="footer">
+
+    <span class="footer__copyright">&copy; 2014-2015. | 由<a href="https://hexo.io/">Hexo</a>强力驱动 | 主题<a href="https://github.com/someus/huno">Huno</a></span>
+    
+</footer>
+        </div>
+    </div>
+
+    <!-- js files -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/scale.fix.js"></script>
+    
+
+    
+
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            MathJax.Hub.Config({ 
+                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+            });
+        });
+    </script>
+
+
+    
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?3a2e717825346e7fc3a2040397434a46";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+    
+    <!--kill ie6 -->
+<!--[if IE 6]>
+  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<![endif]-->
+
+</body>
+</html>
