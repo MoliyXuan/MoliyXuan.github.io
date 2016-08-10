@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    
+
+    <title>
+      前端的开始（1） | Moliy小姐 
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+      <meta name="author" content="moliy">
+    
+    
+
+    <meta name="description" content="##一、html文件基本结构所有的网页标签都在根标签中进行  &amp;lt;html&amp;gt;&amp;lt;/html&amp;gt;&amp;lt;head&amp;gt;  用于定义文档的头部，是所有头部元素的容器。
+头部元素：&amp;lt;title&amp;gt;&amp;lt;script&amp;gt;&amp;lt;style&amp;gt;&amp;lt;link&amp;gt;&amp;lt;meta&amp;gt;等
+&amp;lt;body&amp;gt;&amp;lt;/body&amp;gt;之间是网页的主要内容
+&amp;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="前端的开始（1） | Moliy小姐">
+<meta property="og:url" content="http://www.moliy.pw/2016/08/10/the-beginning-of-the-front-end-1/index.html">
+<meta property="og:site_name" content="Moliy小姐">
+<meta property="og:description" content="##一、html文件基本结构所有的网页标签都在根标签中进行  &amp;lt;html&amp;gt;&amp;lt;/html&amp;gt;&amp;lt;head&amp;gt;  用于定义文档的头部，是所有头部元素的容器。
+头部元素：&amp;lt;title&amp;gt;&amp;lt;script&amp;gt;&amp;lt;style&amp;gt;&amp;lt;link&amp;gt;&amp;lt;meta&amp;gt;等
+&amp;lt;body&amp;gt;&amp;lt;/body&amp;gt;之间是网页的主要内容
+&amp;">
+<meta property="og:image" content="http://img.mukewang.com/5285fc8a0001d1da04100215.jpg">
+<meta property="og:image" content="http://img.mukewang.com/52d3851200012ec503870284.jpg">
+<meta property="og:image" content="http://img.mukewang.com/52d3893400019ee003830208.jpg">
+<meta property="og:image" content="http://img.mukewang.com/52d38f83000160be02920445.jpg">
+<meta property="og:image" content="http://img.mukewang.com/52da4f2a000150b714280550.jpg">
+<meta property="og:image" content="http://img.mukewang.com/52da52200001e00e07930061.jpg">
+<meta property="og:image" content="http://img.mukewang.com/52e5f7c60001a23f07360267.jpg">
+<meta property="og:image" content="http://img.mukewang.com/52e5f8010001159804900257.jpg">
+<meta property="og:image" content="http://img.mukewang.com/52e604590001ae4005270185.jpg">
+<meta property="og:image" content="http://img.mukewang.com/52e605340001014804520288.jpg">
+<meta property="og:image" content="http://img.mukewang.com/52e6037300015a9905030165.jpg">
+<meta property="og:image" content="http://img.mukewang.com/52e60c020001b7f805000178.jpg">
+<meta property="og:image" content="http://img.mukewang.com/52e60c5d00013ced04900257.jpg">
+<meta property="og:updated_time" content="2016-08-10T14:19:50.750Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="前端的开始（1） | Moliy小姐">
+<meta name="twitter:description" content="##一、html文件基本结构所有的网页标签都在根标签中进行  &amp;lt;html&amp;gt;&amp;lt;/html&amp;gt;&amp;lt;head&amp;gt;  用于定义文档的头部，是所有头部元素的容器。
+头部元素：&amp;lt;title&amp;gt;&amp;lt;script&amp;gt;&amp;lt;style&amp;gt;&amp;lt;link&amp;gt;&amp;lt;meta&amp;gt;等
+&amp;lt;body&amp;gt;&amp;lt;/body&amp;gt;之间是网页的主要内容
+&amp;">
+<meta name="twitter:image" content="http://img.mukewang.com/5285fc8a0001d1da04100215.jpg">
+    
+    
+    
+      <link rel="icon" type="image/x-icon" href="/favicon.png">
+    
+    <link rel="stylesheet" href="/css/uno.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/archive.css">
+    <link rel="stylesheet" href="/css/china-social-icon.css">
+
+</head>
+<body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+
+<header class="panel-cover panel-cover--collapsed">
+
+
+  <div class="panel-main">
+
+  
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        
+
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">Moliy小姐</a></h1>
+        <hr class="panel-cover__divider" />
+
+        
+        <p class="panel-cover__description">
+          Moliy小姐的程序员日常
+        </p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+        
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+
+              
+                
+                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">首页</a></li>
+              
+                
+                <li class="navigation__item"><a href="/about" title="" class="">关于</a></li>
+              
+                
+                <li class="navigation__item"><a href="/archive" title="" class="">归档</a></li>
+              
+
+            </ul>
+          </nav>
+
+          <!-- ----------------------------
+To add a new social icon simply duplicate one of the list items from below
+and change the class in the <i> tag to match the desired social network
+and then add your link to the <a>. Here is a full list of social network
+classes that you can use:
+
+    icon-social-500px
+    icon-social-behance
+    icon-social-delicious
+    icon-social-designer-news
+    icon-social-deviant-art
+    icon-social-digg
+    icon-social-dribbble
+    icon-social-facebook
+    icon-social-flickr
+    icon-social-forrst
+    icon-social-foursquare
+    icon-social-github
+    icon-social-google-plus
+    icon-social-hi5
+    icon-social-instagram
+    icon-social-lastfm
+    icon-social-linkedin
+    icon-social-medium
+    icon-social-myspace
+    icon-social-path
+    icon-social-pinterest
+    icon-social-rdio
+    icon-social-reddit
+    icon-social-skype
+    icon-social-spotify
+    icon-social-stack-overflow
+    icon-social-steam
+    icon-social-stumbleupon
+    icon-social-treehouse
+    icon-social-tumblr
+    icon-social-twitter
+    icon-social-vimeo
+    icon-social-xbox
+    icon-social-yelp
+    icon-social-youtube
+    icon-social-zerply
+    icon-mail
+
+-------------------------------->
+
+<!-- add social info here -->
+
+
+
+<nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+    
+      <!-- Github -->
+      <li class="navigation__item">
+        <a href="https://github.com/MoliyXuan" title="Huno on GitHub">
+          <i class='icon icon-social-github'></i>
+          <span class="label">GitHub</span>
+        </a>
+      </li>
+    
+
+    <!-- China social icon -->
+    <!--
+    
+      <li class="navigation__item">
+        <a href="" title="">
+          <i class='icon cs-icon-douban'></i>
+          <span class="label">Douban</span>
+        </a>
+      </li>
+
+      <li class="navigation__item">
+        <a href="" title="">
+          <i class='icon cs-icon-weibo'></i>
+          <span class="label">Weibo</span>
+        </a>
+      </li>
+
+    -->
+
+
+
+  </ul>
+</nav>
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner entry">
+            
+
+<article class="post-container post-container--single">
+
+  <header class="post-header">
+    
+    <h1 class="post-title">前端的开始（1）</h1>
+
+    
+
+    <div class="post-meta">
+      <time datetime="2016-08-10" class="post-meta__date date">2016-08-10</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+            <font class="categories">
+            &#8226; 分类:
+            <a class="categories-link" href="/categories/前端/">前端</a>
+            </font>
+          
+
+          
+             &#8226; 标签:
+            <font class="tags">
+              <a class="tags-link" href="/tags/html/">html</a>
+            </font>
+          
+
+      </span>
+    </div>
+    
+    
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <p>##一、html文件基本结构<br>所有的网页标签都在根标签中进行  <code>&lt;html&gt;&lt;/html&gt;</code><br><code>&lt;head&gt;</code>  用于定义文档的头部，是所有头部元素的容器。</p>
+<p>头部元素：<br><code>&lt;title&gt;&lt;script&gt;&lt;style&gt;&lt;link&gt;&lt;meta&gt;</code>等</p>
+<p><code>&lt;body&gt;&lt;/body&gt;</code>之间是网页的主要内容</p>
+<p><code>&lt;title&gt;&lt;/title&gt;</code>之间是网页的标题信息<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;head&gt;</div><div class="line">    &lt;title&gt;hello world&lt;/title&gt;</div><div class="line">&lt;/head&gt;</div></pre></td></tr></table></figure></p>
+<p>如下图所示：</p>
+<p><img src="http://img.mukewang.com/5285fc8a0001d1da04100215.jpg" alt=""><br>网页的<code>&lt;title&gt;</code>标签用于告诉用户和搜索引擎这个网页的主要内容是什么，搜索引擎可以通过网页标题，迅速的判断出网页的主题。</p>
+<p>下面这些标签可用在 head 部分<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;head&gt;</div><div class="line">    &lt;title&gt;...&lt;/title&gt;</div><div class="line">    &lt;meta&gt;</div><div class="line">    &lt;link&gt;</div><div class="line">    &lt;style&gt;...&lt;/style&gt;</div><div class="line">    &lt;script&gt;...&lt;/script&gt;</div><div class="line">&lt;/head&gt;</div></pre></td></tr></table></figure></p>
+<p>##二、标签语句<br>标题标签：  <code>&lt;h1&gt;标题&lt;/h1&gt;</code><br>段落标签：  <code>&lt;p&gt;内容&lt;/p&gt;</code><br>图片标签：  <code>&lt;img src=&quot;***.jpg&quot;&gt;</code><br>强调标签：  <code>&lt;em&gt;文本&lt;/em&gt; &lt;strong&gt;文本&lt;/strong&gt;</code><br>引用标签：  <code>&lt;q&gt;引用较短文本&lt;/q&gt; &lt;blockquote&gt;引用较长文本&lt;/blockquote&gt;</code><br>换行标签：  <code>&lt;br&gt; or &lt;br /&gt;</code><br>注释标签：  <code>&lt;!--注释文字--&gt;</code><br>分隔标签：  <code>&lt;hr  /&gt; or &lt;hr&gt;</code><br>地址标签：  <code>&lt;address&gt;联系地址信息&lt;/address&gt;</code><br>代码标签：  <code>&lt;code&gt;代码语言&lt;/code&gt; &lt;pre&gt;语言代码段&lt;/pre&gt;</code><br>列表标签：  <code>&lt;ul&gt;&lt;/ul&gt; &lt;ol&gt;&lt;/ol&gt;</code><br>容器标签：  <code>&lt;div&gt;...&lt;/div&gt;</code><br>表格标签：  <code>&lt;table&gt;&lt;/table&gt;</code><br>链接标签：  <code>&lt;a&gt;&lt;/a&gt;</code><br>表单标签：  <code>&lt;form&gt;&lt;/form&gt;</code></p>
+<p>标题标签分为六级 <code>&lt;hx&gt;</code> x:1~6</p>
+<p>代码注释  主要是方便记忆 和他人快速读懂 方便交流<br><code>&lt;!--注释文字--&gt;</code></p>
+<p><code>&lt;span&gt;文本&lt;/span&gt;</code> 是为了给文本单独设置样式而不是为了强调用的。</p>
+<p>浏览器对<code>&lt;q&gt;</code>标签的解析是双引号。<br>浏览器对<code>&lt;blockquote&gt;</code>标签的解析是缩进样式。</p>
+<p>换行标签的语法：<br>xhtml1.0写法：<code>&lt;br /&gt;</code>这种比较规范，推荐使用。<br>html4.01写法：<code>&lt;br&gt;</code>  这个版本比较兼容，写上一种也可以。</p>
+<p>与以前我们学过的标签不一样<code>&lt;br /&gt;</code>标签是一个空标签，没有HTML内容的标签就是空标签，空标签只需要写一个开始标签。这样的标签有<code>&lt;br /&gt;、&lt;hr /&gt;和&lt;img /&gt;</code>。</p>
+<p>分隔标签的语法：<br>html4.01版本 ：<code>&lt;hr&gt;</code><br>xhtml1.0版本 ：<code>&lt;hr /&gt;</code></p>
+<p><code>&lt;hr /&gt;</code>标签的在浏览器中的默认样式线条比较粗，颜色为灰色。</p>
+<p>空格输入：  <code>&amp;nbsp;</code></p>
+<p>在文章中一般如果要插入多行代码时不能使用<code>&lt;code&gt;</code>标签.<br>如果是多行代码，可以使用<code>&lt;pre&gt;</code>标签。</p>
+<p><code>&lt;pre&gt;</code>标签的主要作用:预格式化的文本。被包围在<code>&lt;pre&gt;</code>元素中的文本通常会保留空格和换行符。</p>
+<p><code>&lt;pre&gt;</code>标签不只是为显示计算机的源代码时用的，在你需要在网页中预显示格式时都可以使用它，只是<code>&lt;pre&gt;</code>标签的一个常见应用就是用来展示计算机的源代码。</p>
+<p>ul-li是没有前后顺序的信息列表。<br>语法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;ul&gt;</div><div class="line">  &lt;li&gt;信息&lt;/li&gt;</div><div class="line">  &lt;li&gt;信息&lt;/li&gt;</div><div class="line">   ......</div><div class="line">&lt;/ul&gt;</div></pre></td></tr></table></figure></p>
+<p>ul-li在网页中显示的默认样式一般为：每项li前都自带一个圆点，如下图所示：<br><img src="http://img.mukewang.com/52d3851200012ec503870284.jpg" alt=""></p>
+<p>用<code>&lt;ol&gt;</code>标签来制作有序列表来展示。<br>语法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;ol&gt;</div><div class="line">   &lt;li&gt;信息&lt;/li&gt;</div><div class="line">   &lt;li&gt;信息&lt;/li&gt;</div><div class="line">   ......</div><div class="line">&lt;/ol&gt;</div></pre></td></tr></table></figure></p>
+<p><code>&lt;ol&gt;</code>在网页中显示的默认样式一般为：每项<code>&lt;li&gt;</code>前都自带一个序号，序号默认从1开始，如下图所示：<br><img src="http://img.mukewang.com/52d3893400019ee003830208.jpg" alt=""></p>
+<p>在网页制作过程过中，可以把一些独立的逻辑部分划分出来，放在一个<code>&lt;div&gt;</code>标签中，这个<code>&lt;div&gt;</code>标签的作用就相当于一个容器。语法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;div&gt;…&lt;/div&gt;</div></pre></td></tr></table></figure></p>
+<p>为了使逻辑更加清晰，我们可以为这一个独立的逻辑部分设置一个名称，用<code>id</code>属性来为<code>&lt;div&gt;</code>提供唯一的名称，这个就像我们每个人都有一个身份证号，这个身份证号是唯一标识我们的身份的，也是必须<strong>唯一</strong>的。语法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;div  id=&quot;版块名称&quot;&gt;…&lt;/div&gt;</div></pre></td></tr></table></figure></p>
+<p>表格用到的标签用法：<br>1、<code>&lt;table&gt;…&lt;/table&gt;</code>：整个表格以<code>&lt;table&gt;</code>标记开始,<code>&lt;/table&gt;</code>标记结束。</p>
+<p>2、<code>&lt;tbody&gt;…&lt;/tbody&gt;</code>：当表格内容非常多时，表格会下载一点显示一点，但如果加上<code>&lt;tbody&gt;</code>标签后，这个表格就要等表格内容全部下载完才会显示。</p>
+<p>3、<code>&lt;tr&gt;…&lt;/tr&gt;</code>：表格的一行，所以有几对<code>tr</code>表格就有几行。</p>
+<p>4、<code>&lt;td&gt;…&lt;/td&gt;</code>：表格的一个单元格，一行中包含几对<code>&lt;td&gt;...&lt;/td&gt;</code>，说明一行中就有几列。</p>
+<p>5、<code>&lt;th&gt;…&lt;/th&gt;</code>：表格的头部的一个单元格，表格表头。</p>
+<p>6、表格中列的个数，取决于一行中数据单元格的个数。<br>表格样式：<br>1、table表格在没有添加css样式之前，在浏览器中显示是没有表格线的。<br>2、表头，也就是<code>th</code>标签中的文本默认为粗体并且居中显示。<br><img src="http://img.mukewang.com/52d38f83000160be02920445.jpg" alt=""></p>
+<p>表格摘要:<br>摘要的内容是不会在浏览器中显示出来的。它的作用是增加表格的可读性(语义化)，使搜索引擎更好的读懂表格内容，还可以使屏幕阅读器更好的帮助特殊用户读取表格内容。<br>语法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;table summary=&quot;表格简介文本&quot;&gt;</div></pre></td></tr></table></figure></p>
+<p>表格标题:用以描述表格内容，标题的显示位置：表格上方。语法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;table&gt;</div><div class="line">    &lt;caption&gt;标题文本&lt;/caption&gt;</div><div class="line">    &lt;tr&gt;</div><div class="line">        &lt;td&gt;…&lt;/td&gt;</div><div class="line">        &lt;td&gt;…&lt;/td&gt;</div><div class="line">        …</div><div class="line">    &lt;/tr&gt;</div><div class="line">…</div><div class="line">&lt;/table&gt;</div></pre></td></tr></table></figure></p>
+<p>超链接：使用<code>&lt;a&gt;</code>标签可实现超链接，它在网页制作中可以说是无处不在，只要有链接的地方，就会有这个标签。语法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;a  href=&quot;目标网址&quot;  title=&quot;鼠标滑过显示的文本&quot;&gt;链接显示的文本&lt;/a&gt;</div></pre></td></tr></table></figure></p>
+<p>例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;a  href=&quot;http://www.imooc.com&quot;  title=&quot;点击进入慕课网&quot;&gt;click here!&lt;/a&gt;</div></pre></td></tr></table></figure></p>
+<p>上面例子作用是单击click here!文字，网页链接到<code>http://www.imooc.com</code>这个网页。</p>
+<p>title属性的作用，鼠标滑过链接文字时会显示这个属性的文本内容。这个属性在实际网页开发中作用很大，主要方便搜索引擎了解链接地址的内容（语义化更友好）。只要为文本加入a标签后，文字的颜色就会自动变为蓝色（被点击过的文本颜色为紫色）。</p>
+<p><code>&lt;a&gt;</code>标签在默认情况下，链接的网页是在当前浏览器窗口中打开，有时我们需要在新的浏览器窗口中打开。如下代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;a href=&quot;目标网址&quot; target=&quot;_blank&quot;&gt;click here!&lt;/a&gt;</div></pre></td></tr></table></figure></p>
+<p>使用mailto在网页中链接Email地址:<br><code>&lt;a&gt;</code>标签还有一个作用是可以链接Email地址，使用mailto能让访问者便捷向网站管理者发送电子邮件。我们还可以利用mailto做许多其它事情。下面一一进行讲解，请看详细图示：<br><img src="http://img.mukewang.com/52da4f2a000150b714280550.jpg" alt=""></p>
+<p><strong>如果mailto后面同时有多个参数的话，第一个参数必须以“ ? ”开头，后面的参数每一个都以“ &amp; ”分隔。</strong><br>例如：<img src="http://img.mukewang.com/52da52200001e00e07930061.jpg" alt=""></p>
+<p>引用图片语法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;img src=&quot;图片地址&quot; alt=&quot;下载失败时的替换文本&quot; title = &quot;提示文本&quot;&gt;</div></pre></td></tr></table></figure></p>
+<p><strong>注意：</strong></p>
+<ol><br><li>src：标识图像的位置；</li><br><li>alt：指定图像的描述性文本，当图像不可见时（下载不成功时），可看到该属性指定的文本；</li><br><li>title：提供在图像可见时对图像的描述(鼠标滑过图片时显示的文本)；</li><br><li>图像可以是GIF，PNG，JPEG格式的图像文件。</li><br></ol>
+
+<p>网站怎样与用户进行交互？答案是使用HTML表单(form)。表单是可以把浏览者输入的数据传送到服务器端，这样服务器端程序就可以处理表单传过来的数据。语法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;form   method=&quot;传送方式&quot;   action=&quot;服务器文件&quot;&gt;</div></pre></td></tr></table></figure></p>
+<p>1.<code>&lt;form&gt;</code> ：<code>&lt;form&gt;</code>标签是成对出现的，以<form>开始，以</form>结束。<br>2.<code>action</code>：浏览者输入的数据被传送到的地方,比如一个PHP页面(save.php)。<br>3.<code>method</code>： 数据传送的方式（get/post）。</p>
+<p><strong>注意：</strong><br>所有表单控件（文本框、文本域、按钮、单选框、复选框等）都必须放在<code>&lt;form&gt;&lt;/form&gt;</code>标签之间（否则用户输入的信息可提交不到服务器上哦！）。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;form    method=&quot;post&quot;   action=&quot;save.php&quot;&gt;</div><div class="line">        &lt;label for=&quot;username&quot;&gt;用户名:&lt;/label&gt;</div><div class="line">        &lt;input type=&quot;text&quot; name=&quot;username&quot; /&gt;</div><div class="line">        &lt;label for=&quot;pass&quot;&gt;密码:&lt;/label&gt;</div><div class="line">        &lt;input type=&quot;password&quot; name=&quot;pass&quot; /&gt;</div><div class="line">&lt;/form&gt;</div></pre></td></tr></table></figure></p>
+<p>当用户要在表单中键入字母、数字等内容时，就会用到文本输入框。文本框也可以转化为密码输入框。语法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;form&gt;</div><div class="line">   &lt;input type=&quot;text/password&quot; name=&quot;名称&quot; value=&quot;文本&quot; /&gt;</div><div class="line">&lt;/form&gt;</div></pre></td></tr></table></figure></p>
+<ol><br><li>type：当type=”text”时，输入框为文本输入框; 当type=”password”时, 输入框为密码输入框。</li><br><li>name：为文本框命名，以备后台程序ASP 、PHP使用。</li><br><li>value：为文本输入框设置默认值。(一般起到提示作用)。</li><br></ol>
+
+<p>当用户需要在表单中输入大段文字时，需要用到文本输入域。语法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;textarea  rows=&quot;行数&quot; cols=&quot;列数&quot;&gt;文本&lt;/textarea&gt;</div></pre></td></tr></table></figure></p>
+<p>1、cols ：多行输入域的列数。<br>2、rows ：多行输入域的行数。<br>3、在<code>&lt;textarea&gt;&lt;/textarea&gt;</code>标签之间可以输入默认值。</p>
+<p>在使用表单设计调查表时，为了减少用户的操作，使用选择框是一个好主意，html中有两种选择框，即单选框和复选框，两者的区别是单选框中的选项用户只能选择一项，而复选框中用户可以任意选择多项，甚至全选。请看下面的例子:<br>语法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input   type=&quot;radio/checkbox&quot;   value=&quot;值&quot;    name=&quot;名称&quot;   checked=&quot;checked&quot;/&gt;</div></pre></td></tr></table></figure></p>
+<p>1、type:<br>   当 type=”radio” 时，控件为单选框<br>   当 type=”checkbox” 时，控件为复选框<br>2、value：提交数据到服务器的值（后台程序PHP使用）<br>3、name：为控件命名，以备后台程序 ASP、PHP 使用<br>4、checked：当设置 checked=”checked” 时，该选项被默认选中<br>例如：<br><img src="http://img.mukewang.com/52e5f7c60001a23f07360267.jpg" alt=""><br><img src="http://img.mukewang.com/52e5f8010001159804900257.jpg" alt=""></p>
+<p><strong>注意:</strong><br>同一组的单选按钮，name 取值一定要一致，比如上面例子为同一个名称“radioLove”，这样同一组的单选按钮才可以起到单选的作用。</p>
+<p>下拉列表在网页中也常会用到，它可以有效的节省网页空间。既可以单选、又可以多选。如下代码：<br><img src="http://img.mukewang.com/52e604590001ae4005270185.jpg" alt=""><br><img src="http://img.mukewang.com/52e605340001014804520288.jpg" alt=""></p>
+<p><img src="http://img.mukewang.com/52e6037300015a9905030165.jpg" alt=""></p>
+<p><code>selected=&quot;selected&quot;</code>：设置selected=”selected”属性，则该选项就被默认选中。</p>
+<p>下拉列表也可以进行多选操作，在<code>&lt;select&gt;</code>标签中设置multiple=”multiple”属性，就可以实现多选功能，在 widows 操作系统下，进行多选时按下Ctrl键同时进行单击（在 Mac下使用 Command +单击），可以选择多个选项。如下代码：<br><img src="http://img.mukewang.com/52e60c020001b7f805000178.jpg" alt=""><br><img src="http://img.mukewang.com/52e60c5d00013ced04900257.jpg" alt=""></p>
+<p><strong>使用提交按钮，提交数据:</strong>在表单中有两种按钮可以使用，分别为：提交按钮、重置。这一小节讲解提交按钮：当用户需要提交表单信息到服务器时，需要用到提交按钮。语法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input   type=&quot;submit&quot;   value=&quot;提交&quot;&gt;</div></pre></td></tr></table></figure></p>
+<p>type：只有当type值设置为submit时，按钮才有提交作用<br>value：按钮上显示的文字</p>
+<p><strong>重置表单信息:</strong>当用户需要重置表单信息到初始时的状态时，比如用户输入“用户名”后，发现书写有误，可以使用重置按钮使输入框恢复到初始状态。只需要把type设置为”reset”就可以。语法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input type=&quot;reset&quot; value=&quot;重置&quot;&gt;</div></pre></td></tr></table></figure></p>
+<p>type：只有当type值设置为reset时，按钮才有重置作用<br>value：按钮上显示的文字</p>
+<p>label标签不会向用户呈现任何特殊效果，它的作用是为鼠标用户改进了可用性。如果你在 label 标签内点击文本，就会触发此控件。就是说，当用户单击选中该label标签时，浏览器就会自动将焦点转到和标签相关的表单控件上（就自动选中和该label标签相关连的表单控件上）。语法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;label for=&quot;控件id名称&quot;&gt;</div></pre></td></tr></table></figure></p>
+<p><strong>标签的 for 属性中的值应当与相关控件的 id 属性值一定要相同。</strong></p>
+
+  </section>
+
+  
+  
+
+<section class="post-comments">
+
+    <div class="ds-thread" data-thread-key="2016/08/10/the-beginning-of-the-front-end-1/"></div>
+
+    <script type="text/javascript">
+      var duoshuoQuery = {short_name:"moliy"};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+        || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+    </script> 
+
+</section>
+
+
+</article>
+
+
+            <footer class="footer">
+
+    <span class="footer__copyright">&copy; 2014-2015. | 由<a href="https://hexo.io/">Hexo</a>强力驱动 | 主题<a href="https://github.com/someus/huno">Huno</a></span>
+    
+</footer>
+        </div>
+    </div>
+
+    <!-- js files -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/scale.fix.js"></script>
+    
+
+    
+
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            MathJax.Hub.Config({ 
+                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+            });
+        });
+    </script>
+
+
+    
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?3a2e717825346e7fc3a2040397434a46";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+    
+    <!--kill ie6 -->
+<!--[if IE 6]>
+  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<![endif]-->
+
+</body>
+</html>
