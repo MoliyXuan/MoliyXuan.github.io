@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    
+
+    <title>
+      图片库及最佳实践 | Moliy小姐 
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+      <meta name="author" content="moliy">
+    
+    
+
+    <meta name="description" content="图片库及最佳实践图片库今天兽兽讲了关于图片库的js应用，之前还没开始js学习的时候，图片链接的跳转都是在当前页面进行跳转，或者用target=”_blank”的属性，在新窗口中打开被链接文档。但是这种方式可能无法满足一些用户的体验，而图片库的学习就是来实现在当前窗口实现图片链接的切换。
+12345678910111213141516171819202122232425&amp;lt;body&amp;gt;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="图片库及最佳实践 | Moliy小姐">
+<meta property="og:url" content="http://www.moliy.pw/2016/09/24/dom1/index.html">
+<meta property="og:site_name" content="Moliy小姐">
+<meta property="og:description" content="图片库及最佳实践图片库今天兽兽讲了关于图片库的js应用，之前还没开始js学习的时候，图片链接的跳转都是在当前页面进行跳转，或者用target=”_blank”的属性，在新窗口中打开被链接文档。但是这种方式可能无法满足一些用户的体验，而图片库的学习就是来实现在当前窗口实现图片链接的切换。
+12345678910111213141516171819202122232425&amp;lt;body&amp;gt;">
+<meta property="og:updated_time" content="2016-09-24T11:35:42.456Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="图片库及最佳实践 | Moliy小姐">
+<meta name="twitter:description" content="图片库及最佳实践图片库今天兽兽讲了关于图片库的js应用，之前还没开始js学习的时候，图片链接的跳转都是在当前页面进行跳转，或者用target=”_blank”的属性，在新窗口中打开被链接文档。但是这种方式可能无法满足一些用户的体验，而图片库的学习就是来实现在当前窗口实现图片链接的切换。
+12345678910111213141516171819202122232425&amp;lt;body&amp;gt;">
+    
+    
+    
+      <link rel="icon" type="image/x-icon" href="/favicon.png">
+    
+    <link rel="stylesheet" href="/css/uno.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/archive.css">
+    <link rel="stylesheet" href="/css/china-social-icon.css">
+
+</head>
+<body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+
+<header class="panel-cover panel-cover--collapsed">
+
+
+  <div class="panel-main">
+
+  
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        
+
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">Moliy小姐</a></h1>
+        <hr class="panel-cover__divider" />
+
+        
+        <p class="panel-cover__description">
+          Moliy小姐的程序员日常
+        </p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+        
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+
+              
+                
+                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">首页</a></li>
+              
+                
+                <li class="navigation__item"><a href="/about" title="" class="">关于</a></li>
+              
+                
+                <li class="navigation__item"><a href="/archive" title="" class="">归档</a></li>
+              
+
+            </ul>
+          </nav>
+
+          <!-- ----------------------------
+To add a new social icon simply duplicate one of the list items from below
+and change the class in the <i> tag to match the desired social network
+and then add your link to the <a>. Here is a full list of social network
+classes that you can use:
+
+    icon-social-500px
+    icon-social-behance
+    icon-social-delicious
+    icon-social-designer-news
+    icon-social-deviant-art
+    icon-social-digg
+    icon-social-dribbble
+    icon-social-facebook
+    icon-social-flickr
+    icon-social-forrst
+    icon-social-foursquare
+    icon-social-github
+    icon-social-google-plus
+    icon-social-hi5
+    icon-social-instagram
+    icon-social-lastfm
+    icon-social-linkedin
+    icon-social-medium
+    icon-social-myspace
+    icon-social-path
+    icon-social-pinterest
+    icon-social-rdio
+    icon-social-reddit
+    icon-social-skype
+    icon-social-spotify
+    icon-social-stack-overflow
+    icon-social-steam
+    icon-social-stumbleupon
+    icon-social-treehouse
+    icon-social-tumblr
+    icon-social-twitter
+    icon-social-vimeo
+    icon-social-xbox
+    icon-social-yelp
+    icon-social-youtube
+    icon-social-zerply
+    icon-mail
+
+-------------------------------->
+
+<!-- add social info here -->
+
+
+
+<nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+    
+      <!-- Github -->
+      <li class="navigation__item">
+        <a href="https://github.com/MoliyXuan" title="Huno on GitHub">
+          <i class='icon icon-social-github'></i>
+          <span class="label">GitHub</span>
+        </a>
+      </li>
+    
+
+    <!-- China social icon -->
+    <!--
+    
+      <li class="navigation__item">
+        <a href="" title="">
+          <i class='icon cs-icon-douban'></i>
+          <span class="label">Douban</span>
+        </a>
+      </li>
+
+      <li class="navigation__item">
+        <a href="" title="">
+          <i class='icon cs-icon-weibo'></i>
+          <span class="label">Weibo</span>
+        </a>
+      </li>
+
+    -->
+
+
+
+  </ul>
+</nav>
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner entry">
+            
+
+<article class="post-container post-container--single">
+
+  <header class="post-header">
+    
+    <h1 class="post-title">图片库及最佳实践</h1>
+
+    
+
+    <div class="post-meta">
+      <time datetime="2016-09-24" class="post-meta__date date">2016-09-24</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+            <font class="categories">
+            &#8226; 分类:
+            <a class="categories-link" href="/categories/JavaScript/">JavaScript</a>
+            </font>
+          
+
+          
+             &#8226; 标签:
+            <font class="tags">
+              <a class="tags-link" href="/tags/JavaScript-前端/">JavaScript 前端</a>
+            </font>
+          
+
+      </span>
+    </div>
+    
+    
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <h1 id="图片库及最佳实践"><a href="#图片库及最佳实践" class="headerlink" title="图片库及最佳实践"></a>图片库及最佳实践</h1><h2 id="图片库"><a href="#图片库" class="headerlink" title="图片库"></a>图片库</h2><p>今天兽兽讲了关于图片库的js应用，之前还没开始js学习的时候，图片链接的跳转都是在当前页面进行跳转，或者用target=”_blank”的属性，在新窗口中打开被链接文档。但是这种方式可能无法满足一些用户的体验，而图片库的学习就是来实现在当前窗口实现图片链接的切换。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">&lt;body&gt;</div><div class="line">    &lt;h2&gt;Snapshots&lt;/h2&gt;</div><div class="line">    &lt;ul&gt;</div><div class="line">        &lt;li&gt;&lt;a href=&quot;./img/01.jpg&quot; title=&quot;It is a girl&quot; onclick=&quot;showPic(this);des(this);return false;&quot;&gt;One&lt;/a&gt;&lt;/li&gt;</div><div class="line">        &lt;li&gt;&lt;a href=&quot;img/02.jpeg&quot; title=&quot;It is a boy&quot; onclick=&quot;showPic(this);des(this);return false;&quot;&gt;Two&lt;/a&gt;&lt;/li&gt;</div><div class="line">        &lt;li&gt;&lt;a href=&quot;img/03.jpg&quot; title=&quot;It is a picture&quot; onclick=&quot;showPic(this);des(this);return false;&quot;&gt;Three&lt;/a&gt;&lt;/li&gt;</div><div class="line">        &lt;li&gt;&lt;a href=&quot;img/04.jpg&quot; title=&quot;It is a sb&quot; onclick=&quot;showPic(this);des(this);return false;&quot;&gt;Four&lt;/a&gt;&lt;/li&gt;</div><div class="line">    &lt;/ul&gt;</div><div class="line">    &lt;img id=&quot;picHolder&quot; src=&quot;./img/placeholder.jpg&quot; alt=&quot;hahaha&quot;&gt;</div><div class="line">    &lt;p id=&quot;description&quot;&gt;this is a description&lt;/p&gt;</div><div class="line">    &lt;script&gt;</div><div class="line">    function showPic(aaaaa) &#123;</div><div class="line">        var url = aaaaa.getAttribute(&quot;href&quot;);</div><div class="line">        var imageTag = document.getElementById(&quot;picHolder&quot;);</div><div class="line">        imageTag.setAttribute(&quot;src&quot;, url);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    function des(whichPic) &#123;</div><div class="line">        var title = whichPic.getAttribute(&quot;title&quot;);</div><div class="line">        var desTag = document.getElementById(&quot;description&quot;);</div><div class="line">        var textNode = desTag.firstChild;</div><div class="line">        textNode.nodeValue = title;</div><div class="line">    &#125;</div><div class="line">    &lt;/script&gt;</div><div class="line">&lt;/body&gt;</div></pre></td></tr></table></figure>
+<p>通过这样的js设置，实现了在同一窗口下，几个图片链接的切换。<br>这基本就是图片库的学习内容了，但是其实这种方式还是存在问题的。可能你也发现了，就是在html标签当中插入了很多js语句，这就导致html标签不只定义了结构，还掺杂了好多破坏语义的js内容。这就与我们的初衷背道而驰，所以我们还是要把它们进行分离，以更好的发挥他们各自的作用，并且使之分工明确，不破坏语义的同时也实现想要的功能来提高用户体验。这就是之后要提到的最佳实践。<br><em>onclick</em> 属性由元素上的鼠标点击触发。<br>onclick属性通过js来指定被点击触发时的行为。<br>DOM是Document Object Model 文档对象模型，通过这个模型来把html文档来形象的展现成一种节点树。节点主要就是元素节点、文本节点、属性节点三种。标签元素就是元素节点，标签元素的各种属性就是属性节点，而标签的内容就是文本节点。而如何获取这些元素，就涉及到3种常用的方法：</p>
+<ul><br><li>getElementById</li><br><br>document.getElementById(id名)<br><br><li>getElementsByTagName</li><br><br>document.getElementByTagName(元素名)<br><br><li>getElementsByClassName</li><br><br>document.getElementByClassName(类名)<br><br></ul>
+
+<p><strong>ps:</strong>大小写千万不能写错，只要拼写有错误就一定会报错。<br>既然通过上面的方法可以获取到元素，那么就可以获取和设置属性了，这就用到了另外两种方法：</p>
+<ul><br><li>getAttribute</li><br>object.getAttribute(属性名)<br><li>setAttribute</li><br>object.getAttribute(属性名)<br></ul>
+
+<h2 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h2><p>最佳实践主要是解决四个问题：</p>
+<ul>
+<li>平稳退化</li>
+<li>分离js</li>
+<li>向后兼容性</li>
+<li>性能考虑</li>
+</ul>
+<h3 id="平稳退化"><a href="#平稳退化" class="headerlink" title="平稳退化"></a>平稳退化</h3><p>因为一些JavaScript的历史问题禁用了JavaScript和一些浏览器不支持JavaScript，那就有可能出现在访问网站时遇到各种问题，这样就导致因此不再访问这个网站，这是我们不想看到的。而平稳退化，就是保证在这些情况下，网页的内容不会丢失，及时一些行为上的缺失导致用户体验变差，但至少该有的内容不会丢失掉，不耽误用户阅读。<br>JavaScript使用window对象的open（）方法来创建新的浏览窗口。这个方法有三个参数：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">window.open(url,name,features)</div></pre></td></tr></table></figure>
+<p>url是想在新窗口打开的网页的url地址，省略的话就会弹出一个空白的浏览器窗口。<br>name是新窗口的名字，可以在代码里通过这个名字与新窗口进行通信。<br>features是一个以都好分隔的字符串，其内容是新窗口的各种属性，包括窗口尺寸（宽、高）以及新窗口被启用或禁用的各种浏览功能（工具条、菜单条、初始显示位置等等）。<em>设置的原则：新窗口的浏览功能要少而精。</em></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">function openNewWindow(whichA) &#123;</div><div class="line">        var url = whichA.href;</div><div class="line">        window.open(url, &quot;moliy&quot;, &quot;width=300,height=480&quot;);</div><div class="line">    &#125;</div><div class="line">    &lt;/script&gt;</div><div class="line">&lt;/head&gt;</div><div class="line"></div><div class="line">&lt;body&gt;</div><div class="line">    &lt;a href=&quot;http://www.moliy.pw&quot;&gt;跳转&lt;/a&gt;</div><div class="line">&lt;/body&gt;</div></pre></td></tr></table></figure>
+<h3 id="分离js"><a href="#分离js" class="headerlink" title="分离js"></a>分离js</h3><p>目的就是把网页的结构和内容与JavaScript脚本的动作行为分开。<br>上面截取的代码段其实就体现了这样的思想</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">function openNewWindow(whichA) &#123;</div><div class="line">        var url = whichA.href;</div><div class="line">        window.open(url, &quot;moliy&quot;, &quot;width=300,height=480&quot;);</div><div class="line">    &#125;</div><div class="line">    &lt;/script&gt;</div><div class="line">&lt;/head&gt;</div><div class="line"></div><div class="line">&lt;body&gt;</div><div class="line">    &lt;a href=&quot;http://www.moliy.pw&quot;&gt;跳转&lt;/a&gt;</div><div class="line">&lt;/body&gt;</div></pre></td></tr></table></figure>
+<p>这样的结构就保证了，html只用来写结构，js只用来写行为，不会破坏语义。</p>
+<h3 id="向后兼容"><a href="#向后兼容" class="headerlink" title="向后兼容"></a>向后兼容</h3><p>因为浏览器对JavaScript的支持程度不同，所以在开发的过程中不得不考虑一些兼容性的问题，虽然现在很多浏览器的支持已经做的挺不错的了，但在实际应用当中还是要注意兼顾这些不支持的情况。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">&lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">window.onload = prepareLinks;</div><div class="line"></div><div class="line">function prepareLinks() &#123;</div><div class="line">    if (!document.getElementsByTagName) &#123;</div><div class="line">        return;</div><div class="line">    &#125;</div><div class="line">    var links = document.getElementsByTagName(&quot;a&quot;);</div><div class="line">    for (var i = 0; i &lt; links.length; i++) &#123;</div><div class="line">        var link = links[i];</div><div class="line">        link.onclick = function() &#123;</div><div class="line">            openNewWindow(this);</div><div class="line">            return false;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>通过这样的判断，使不支持这些语言的浏览器跳过这款不懂的语言，只解读懂的部分就可以了。这样就解决了一些兼容性的问题。</p>
+<h3 id="性能考虑"><a href="#性能考虑" class="headerlink" title="性能考虑"></a>性能考虑</h3><p>为了保证应用流畅地运行，在为文档编写和应用脚本的时候，要注意一些问题</p>
+<ul>
+<li>尽量少访问DOM和尽量减少标记</li>
+<li>合并和放置脚本</li>
+<li>压缩脚本</li>
+</ul>
+
+  </section>
+
+  
+  
+
+<section class="post-comments">
+
+    <div class="ds-thread" data-thread-key="2016/09/24/dom1/"></div>
+
+    <script type="text/javascript">
+      var duoshuoQuery = {short_name:"moliy"};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+        || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+    </script> 
+
+</section>
+
+
+</article>
+
+
+            <footer class="footer">
+
+    <span class="footer__copyright">&copy; 2014-2015. | 由<a href="https://hexo.io/">Hexo</a>强力驱动 | 主题<a href="https://github.com/someus/huno">Huno</a></span>
+    
+</footer>
+        </div>
+    </div>
+
+    <!-- js files -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/scale.fix.js"></script>
+    
+
+    
+
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            MathJax.Hub.Config({ 
+                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+            });
+        });
+    </script>
+
+
+    
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?3a2e717825346e7fc3a2040397434a46";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+    
+    <!--kill ie6 -->
+<!--[if IE 6]>
+  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<![endif]-->
+
+</body>
+</html>
